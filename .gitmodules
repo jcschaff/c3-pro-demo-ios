@@ -1,3 +1,4 @@
 [submodule "c3-pro-ios-framework"]
 	path = c3-pro-ios-framework
 	url = https://github.com/jcschaff/c3-pro-ios-framework.git
+	branch = develop
