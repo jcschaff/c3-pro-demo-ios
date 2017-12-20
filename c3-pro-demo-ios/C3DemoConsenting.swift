@@ -117,7 +117,7 @@ class C3DemoSignedConsentReview: C3Demo {
 			pdfVC.title = NSLocalizedString("Consent", comment: "")
 			
 			DispatchQueue.main.async {
-				pdfVC.loadPDFDataFrom(url)
+				pdfVC.startURL = url // loadPDFDataFrom(url)
 			}
 			return pdfVC
 		}

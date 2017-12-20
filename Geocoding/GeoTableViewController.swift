@@ -64,19 +64,19 @@ class GeoTableViewController: UITableViewController {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "GeoCell", for: indexPath)
 		if 0 == (indexPath as NSIndexPath).row {
 			cell.textLabel?.text = "Country"
-			cell.detailTextLabel?.text = lastAddress?.country
+			cell.detailTextLabel?.text = lastAddress?.country?.string
 		}
 		else if 1 == (indexPath as NSIndexPath).row {
 			cell.textLabel?.text = "State"
-			cell.detailTextLabel?.text = lastAddress?.state
+			cell.detailTextLabel?.text = lastAddress?.state?.string
 		}
 		else if 2 == (indexPath as NSIndexPath).row {
 			cell.textLabel?.text = "City"
-			cell.detailTextLabel?.text = lastAddress?.city
+			cell.detailTextLabel?.text = lastAddress?.city?.string
 		}
 		else if 3 == (indexPath as NSIndexPath).row {
 			cell.textLabel?.text = "ZIP"
-			cell.detailTextLabel?.text = lastAddress?.postalCode
+			cell.detailTextLabel?.text = lastAddress?.postalCode?.string
 		}
 		return cell
 	}

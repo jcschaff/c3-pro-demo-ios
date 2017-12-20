@@ -41,6 +41,7 @@ class MasterViewController: UITableViewController {
 			C3DemoQuestionnaireChoices(),
 			C3DemoQuestionnaireTextValues(),
 			C3DemoQuestionnaireDates(),
+            C3DemoQuestionnaireEnableWhen(),
 		],[
 			C3DemoSystemServices(),
 		],[

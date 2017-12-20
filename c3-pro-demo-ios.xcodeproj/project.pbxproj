@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE0BCD4E1C9028E700782325 /* Questionnaire-dates.json in Resources */ = {isa = PBXBuildFile; fileRef = EE0BCD4C1C9028E700782325 /* Questionnaire-dates.json */; };
-		EE0BCD4F1C9028E700782325 /* Questionnaire-textvalues.json in Resources */ = {isa = PBXBuildFile; fileRef = EE0BCD4D1C9028E700782325 /* Questionnaire-textvalues.json */; };
-		EE12094A1C1222B100E1D3CB /* Questionnaire-choices.json in Resources */ = {isa = PBXBuildFile; fileRef = EE1209491C1222B100E1D3CB /* Questionnaire-choices.json */; };
+		14916D2F1FE9818F00302B27 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEAD1071DAF820300A665CE /* CryptoSwift.framework */; };
+		14916D421FE9824300302B27 /* JWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14916D3B1FE981FA00302B27 /* JWT.framework */; };
+		14916D471FE98AA800302B27 /* choices.json in Resources */ = {isa = PBXBuildFile; fileRef = 14916D431FE98AA800302B27 /* choices.json */; };
+		14916D481FE98AA800302B27 /* enableWhen.json in Resources */ = {isa = PBXBuildFile; fileRef = 14916D441FE98AA800302B27 /* enableWhen.json */; };
+		14916D491FE98AA800302B27 /* text-and-values.json in Resources */ = {isa = PBXBuildFile; fileRef = 14916D451FE98AA800302B27 /* text-and-values.json */; };
+		14916D4A1FE98AA800302B27 /* dates.json in Resources */ = {isa = PBXBuildFile; fileRef = 14916D461FE98AA800302B27 /* dates.json */; };
+		14916D4C1FE992E300302B27 /* C3DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14916D4B1FE992E300302B27 /* C3DemoServer.swift */; };
 		EE19B9851C6D2BC400B6F40F /* C3DemoSystemServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19B9841C6D2BC400B6F40F /* C3DemoSystemServices.swift */; };
 		EE19B9881C6D2C6D00B6F40F /* C3DemoConsenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19B9871C6D2C6D00B6F40F /* C3DemoConsenting.swift */; };
 		EE19B98A1C6D2CAE00B6F40F /* C3DemoQuestionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19B9891C6D2CAE00B6F40F /* C3DemoQuestionnaire.swift */; };
@@ -44,6 +48,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		14916D381FE981FA00302B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14916D301FE981F900302B27 /* JWT.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 279D639C1AD07FFF0024E2BC;
+			remoteInfo = "JWT-OSX";
+		};
+		14916D3A1FE981FA00302B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14916D301FE981F900302B27 /* JWT.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD9B62231C7753D8005D4844;
+			remoteInfo = "JWT-iOS";
+		};
+		14916D3C1FE981FA00302B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14916D301FE981F900302B27 /* JWT.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD9B62351C7753EC005D4844;
+			remoteInfo = "JWT-tvOS";
+		};
+		14916D3E1FE981FA00302B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14916D301FE981F900302B27 /* JWT.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD9B62471C7753FB005D4844;
+			remoteInfo = "JWT-watchOS";
+		};
+		14916D401FE981FA00302B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14916D301FE981F900302B27 /* JWT.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 279D63A71AD07FFF0024E2BC;
+			remoteInfo = JWTTests;
+		};
 		EE7DD4441C10E68900CBD0E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EE7DD43B1C10E68800CBD0E6 /* C3PRO.xcodeproj */;
@@ -218,9 +257,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EE0BCD4C1C9028E700782325 /* Questionnaire-dates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Questionnaire-dates.json"; sourceTree = "<group>"; };
-		EE0BCD4D1C9028E700782325 /* Questionnaire-textvalues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Questionnaire-textvalues.json"; sourceTree = "<group>"; };
-		EE1209491C1222B100E1D3CB /* Questionnaire-choices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Questionnaire-choices.json"; sourceTree = "<group>"; };
+		14916D301FE981F900302B27 /* JWT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JWT.xcodeproj; path = "c3-pro-ios-framework/JSONWebToken/JWT.xcodeproj"; sourceTree = "<group>"; };
+		14916D431FE98AA800302B27 /* choices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = choices.json; sourceTree = "<group>"; };
+		14916D441FE98AA800302B27 /* enableWhen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = enableWhen.json; sourceTree = "<group>"; };
+		14916D451FE98AA800302B27 /* text-and-values.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "text-and-values.json"; sourceTree = "<group>"; };
+		14916D461FE98AA800302B27 /* dates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dates.json; sourceTree = "<group>"; };
+		14916D4B1FE992E300302B27 /* C3DemoServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C3DemoServer.swift; sourceTree = "<group>"; };
 		EE19B9841C6D2BC400B6F40F /* C3DemoSystemServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C3DemoSystemServices.swift; sourceTree = "<group>"; };
 		EE19B9871C6D2C6D00B6F40F /* C3DemoConsenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C3DemoConsenting.swift; sourceTree = "<group>"; };
 		EE19B9891C6D2CAE00B6F40F /* C3DemoQuestionnaire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C3DemoQuestionnaire.swift; sourceTree = "<group>"; };
@@ -258,6 +300,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14916D421FE9824300302B27 /* JWT.framework in Frameworks */,
+				14916D2F1FE9818F00302B27 /* CryptoSwift.framework in Frameworks */,
 				EEEAD0DD1DAF81C200A665CE /* ResearchKit.framework in Frameworks */,
 				EE7DD44A1C10E69C00CBD0E6 /* C3PRO.framework in Frameworks */,
 				EEEAD0FD1DAF81EF00A665CE /* SQLite.framework in Frameworks */,
@@ -268,12 +312,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14916D311FE981F900302B27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14916D391FE981FA00302B27 /* JWT.framework */,
+				14916D3B1FE981FA00302B27 /* JWT.framework */,
+				14916D3D1FE981FA00302B27 /* JWT.framework */,
+				14916D3F1FE981FA00302B27 /* JWT.framework */,
+				14916D411FE981FA00302B27 /* JWTTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14A7E8E71FE95A9C008DAF78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE12094B1C1222B600E1D3CB /* Questionnaire */ = {
 			isa = PBXGroup;
 			children = (
-				EE1209491C1222B100E1D3CB /* Questionnaire-choices.json */,
-				EE0BCD4C1C9028E700782325 /* Questionnaire-dates.json */,
-				EE0BCD4D1C9028E700782325 /* Questionnaire-textvalues.json */,
+				14916D431FE98AA800302B27 /* choices.json */,
+				14916D461FE98AA800302B27 /* dates.json */,
+				14916D441FE98AA800302B27 /* enableWhen.json */,
+				14916D451FE98AA800302B27 /* text-and-values.json */,
 			);
 			name = Questionnaire;
 			path = "../c3-pro-ios-framework/examples/Questionnaire";
@@ -291,6 +355,7 @@
 		EE7DD4191C10E44A00CBD0E6 = {
 			isa = PBXGroup;
 			children = (
+				14916D301FE981F900302B27 /* JWT.xcodeproj */,
 				EEEAD1011DAF820300A665CE /* CryptoSwift.xcodeproj */,
 				EEEAD0E51DAF81E900A665CE /* SQLite.xcodeproj */,
 				EEEAD0D31DAF81B500A665CE /* ResearchKit.xcodeproj */,
@@ -298,6 +363,7 @@
 				EE7DD4241C10E44A00CBD0E6 /* c3-pro-demo-ios */,
 				EE7DD43B1C10E68800CBD0E6 /* C3PRO.xcodeproj */,
 				EE7DD4231C10E44A00CBD0E6 /* Products */,
+				14A7E8E71FE95A9C008DAF78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -315,6 +381,7 @@
 				EE7DD4251C10E44A00CBD0E6 /* AppDelegate.swift */,
 				EE7DD4271C10E44A00CBD0E6 /* MasterViewController.swift */,
 				EE7DD4391C10E4DF00CBD0E6 /* C3Demo.swift */,
+				14916D4B1FE992E300302B27 /* C3DemoServer.swift */,
 				EE19B9871C6D2C6D00B6F40F /* C3DemoConsenting.swift */,
 				EE19B9891C6D2CAE00B6F40F /* C3DemoQuestionnaire.swift */,
 				EE19B9841C6D2BC400B6F40F /* C3DemoSystemServices.swift */,
@@ -372,7 +439,7 @@
 				EEEAD0CC1DAF81A800A665CE /* SMART.framework */,
 				EEEAD0CE1DAF81A800A665CE /* SwiftSMART-iOSTests.xctest */,
 				EEEAD0D01DAF81A800A665CE /* SMART.framework */,
-				EEEAD0D21DAF81A800A665CE /* SwiftSMART-OSXTests.xctest */,
+				EEEAD0D21DAF81A800A665CE /* SwiftSMART-macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -442,12 +509,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Boston Children's Hospital";
 				TargetAttributes = {
 					EE7DD4211C10E44A00CBD0E6 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = Q3B26TNSSH;
+						DevelopmentTeam = M5NDX4BH7W;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -473,6 +540,10 @@
 					ProjectRef = EEEAD1011DAF820300A665CE /* CryptoSwift.xcodeproj */;
 				},
 				{
+					ProductGroup = 14916D311FE981F900302B27 /* Products */;
+					ProjectRef = 14916D301FE981F900302B27 /* JWT.xcodeproj */;
+				},
+				{
 					ProductGroup = EEEAD0D41DAF81B500A665CE /* Products */;
 					ProjectRef = EEEAD0D31DAF81B500A665CE /* ResearchKit.xcodeproj */;
 				},
@@ -493,6 +564,41 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		14916D391FE981FA00302B27 /* JWT.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWT.framework;
+			remoteRef = 14916D381FE981FA00302B27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14916D3B1FE981FA00302B27 /* JWT.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWT.framework;
+			remoteRef = 14916D3A1FE981FA00302B27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14916D3D1FE981FA00302B27 /* JWT.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWT.framework;
+			remoteRef = 14916D3C1FE981FA00302B27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14916D3F1FE981FA00302B27 /* JWT.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JWT.framework;
+			remoteRef = 14916D3E1FE981FA00302B27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14916D411FE981FA00302B27 /* JWTTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JWTTests.xctest;
+			remoteRef = 14916D401FE981FA00302B27 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		EE7DD4451C10E68900CBD0E6 /* C3PRO.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -528,10 +634,10 @@
 			remoteRef = EEEAD0CF1DAF81A800A665CE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		EEEAD0D21DAF81A800A665CE /* SwiftSMART-OSXTests.xctest */ = {
+		EEEAD0D21DAF81A800A665CE /* SwiftSMART-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "SwiftSMART-OSXTests.xctest";
+			path = "SwiftSMART-macOSTests.xctest";
 			remoteRef = EEEAD0D11DAF81A800A665CE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -619,13 +725,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14916D481FE98AA800302B27 /* enableWhen.json in Resources */,
+				14916D4A1FE98AA800302B27 /* dates.json in Resources */,
 				EE7DD45B1C10E88400CBD0E6 /* Intro.css in Resources */,
 				EE7DD4701C1103D500CBD0E6 /* logo_disease_researchInstitute@2x.png in Resources */,
+				14916D471FE98AA800302B27 /* choices.json in Resources */,
+				14916D491FE98AA800302B27 /* text-and-values.json in Resources */,
 				EE7DD45C1C10E88400CBD0E6 /* Intro_about.html in Resources */,
-				EE0BCD4F1C9028E700782325 /* Questionnaire-textvalues.json in Resources */,
 				EE7DD4601C10E88400CBD0E6 /* StudyIntro.storyboard in Resources */,
 				EE7DD4321C10E44A00CBD0E6 /* LaunchScreen.storyboard in Resources */,
-				EE0BCD4E1C9028E700782325 /* Questionnaire-dates.json in Resources */,
 				EE7DD45F1C10E88400CBD0E6 /* StudyIntro.json in Resources */,
 				EE7DD46E1C11033400CBD0E6 /* logo_disease_large@2x.png in Resources */,
 				EE7DD46C1C10F51B00CBD0E6 /* Consent_sharing.html in Resources */,
@@ -634,7 +742,6 @@
 				EE7DD4651C10EC9E00CBD0E6 /* Consent.pdf in Resources */,
 				EE7DD42D1C10E44A00CBD0E6 /* Main.storyboard in Resources */,
 				EE7DD47C1C110D7500CBD0E6 /* 2_activity.html in Resources */,
-				EE12094A1C1222B100E1D3CB /* Questionnaire-choices.json in Resources */,
 				EE7DD45D1C10E88400CBD0E6 /* Intro_eligibility.html in Resources */,
 				EE7DD4781C110CB800CBD0E6 /* video_icon.png in Resources */,
 				EE7DD45E1C10E88400CBD0E6 /* Intro_howstuffworks.html in Resources */,
@@ -655,6 +762,7 @@
 				EE19B98A1C6D2CAE00B6F40F /* C3DemoQuestionnaire.swift in Sources */,
 				EE19B9851C6D2BC400B6F40F /* C3DemoSystemServices.swift in Sources */,
 				EE7DD4261C10E44A00CBD0E6 /* AppDelegate.swift in Sources */,
+				14916D4C1FE992E300302B27 /* C3DemoServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,14 +824,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -732,6 +846,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -763,14 +878,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -779,6 +900,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -801,12 +923,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q3B26TNSSH;
+				DEVELOPMENT_TEAM = M5NDX4BH7W;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = "c3-pro-demo-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.chip.c3-pro.c3-pro-demo-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uconn.c3-pro.c3-pro-demo-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -815,12 +938,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q3B26TNSSH;
+				DEVELOPMENT_TEAM = M5NDX4BH7W;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = "c3-pro-demo-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.chip.c3-pro.c3-pro-demo-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uconn.c3-pro.c3-pro-demo-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

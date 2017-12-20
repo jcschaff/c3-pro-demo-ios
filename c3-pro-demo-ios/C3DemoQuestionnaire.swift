@@ -47,7 +47,7 @@ class C3DemoQuestionnaire: C3Demo {
 		do {
 			// get the questionnaire; to download one from a FHIR server you can use `Questionnaire.readFrom(...)` -- you probably want to use a cached one!
 			if nil == controller {
-				let questionnaire = try Bundle.main.fhir_bundledResource("Questionnaire-\(type)", type: Questionnaire.self)
+				let questionnaire = try Bundle.main.fhir_bundledResource("\(type)", type: Questionnaire.self)
 				controller = QuestionnaireController(questionnaire: questionnaire)
 			}
 			
@@ -55,10 +55,16 @@ class C3DemoQuestionnaire: C3Demo {
 				viewController.dismiss(animated: true)
 				if let answers = answers {
 					// you could now use the following to push the answers to a SMART on FHIR server:
-					// answers.create(<# smart.server #>) { error in [...] }
+					answers.create(C3DemoServer.sharedInstance.queue) { error in
+                        print("error submitting questionnaireResponse to dataQueue: \(error)")
+                    }
 					viewController.presentingViewController?.c3_alert("Survey Completed", message: "Survey is complete, answers have been logged to console")
-					print("\(answers):\n\(answers.asJSON())")
-				}
+                    do {
+                        try print("\(answers):\n\(answers.asJSON())")
+                    } catch {
+                    }
+                }
+            
 			}
 			
 			controller!.whenCancelledOrFailed = { viewController, error in
@@ -91,15 +97,22 @@ class C3DemoQuestionnaireChoices: C3DemoQuestionnaire {
 class C3DemoQuestionnaireTextValues: C3DemoQuestionnaire {
 	
 	override var type: String {
-		return "textvalues"
+		return "text-and-values"
 	}
 }
 
 
 class C3DemoQuestionnaireDates: C3DemoQuestionnaire {
-	
-	override var type: String {
-		return "dates"
-	}
+    
+    override var type: String {
+        return "dates"
+    }
+}
+
+class C3DemoQuestionnaireEnableWhen: C3DemoQuestionnaire {
+    
+    override var type: String {
+        return "enableWhen"
+    }
 }
 
