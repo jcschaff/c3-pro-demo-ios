@@ -263,6 +263,7 @@
 		14916D451FE98AA800302B27 /* text-and-values.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "text-and-values.json"; sourceTree = "<group>"; };
 		14916D461FE98AA800302B27 /* dates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dates.json; sourceTree = "<group>"; };
 		14916D4B1FE992E300302B27 /* C3DemoServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C3DemoServer.swift; sourceTree = "<group>"; };
+		14916D4F1FEBF62F00302B27 /* c3-pro-demo-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "c3-pro-demo-ios.entitlements"; sourceTree = "<group>"; };
 		EE19B9841C6D2BC400B6F40F /* C3DemoSystemServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C3DemoSystemServices.swift; sourceTree = "<group>"; };
 		EE19B9871C6D2C6D00B6F40F /* C3DemoConsenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C3DemoConsenting.swift; sourceTree = "<group>"; };
 		EE19B9891C6D2CAE00B6F40F /* C3DemoQuestionnaire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C3DemoQuestionnaire.swift; sourceTree = "<group>"; };
@@ -378,6 +379,7 @@
 		EE7DD4241C10E44A00CBD0E6 /* c3-pro-demo-ios */ = {
 			isa = PBXGroup;
 			children = (
+				14916D4F1FEBF62F00302B27 /* c3-pro-demo-ios.entitlements */,
 				EE7DD4251C10E44A00CBD0E6 /* AppDelegate.swift */,
 				EE7DD4271C10E44A00CBD0E6 /* MasterViewController.swift */,
 				EE7DD4391C10E4DF00CBD0E6 /* C3Demo.swift */,
@@ -516,6 +518,11 @@
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = M5NDX4BH7W;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};

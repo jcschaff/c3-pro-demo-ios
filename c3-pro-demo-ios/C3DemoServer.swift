@@ -32,28 +32,31 @@ final class C3DemoServer {
         //super.init()
         //let hostname = "jamess-mbp-2.j4home.net"
         //let hostname = "jamess-mbp-2.local"
+        //let hostname = "Jamess-MacBook-Pro-2.local"
         
-        let hostname = "localhost"
+        let baseurl = "https://api.jcschaff.net:8888"
+        //let baseurl = "https://2amoveu7z2.execute-api.us-east-1.amazonaws.com/alpha"
+        //let baseurl = "https://api.jcschaff.net/c3pro/alpha"
         let my_auth = [
             "client_name": "My Awesome App",
             //"client_id": "MY Client ID",
-            "authorize_uri": "https://\(hostname):8081/c3pro/auth",
-            "registration_uri": "https://\(hostname):8081/c3pro/register",
+            "authorize_uri": "\(baseurl)/auth",
+            "registration_uri": "\(baseurl)/register",
             "authorize_type": "client_credentials",
             ] as OAuth2JSON
-        queue = DataQueue(baseURL: URL(string: "https://\(hostname):8081/c3pro/")!, auth: my_auth)
+        queue = DataQueue(baseURL: URL(string: "\(baseurl)/")!, auth: my_auth)
         
-        //
-        // DANGER ... DEBUG URL Session Delegate allows man-in-the-middle attacks (using self-signed certs or bogus Certificate Authorities).
-        // using for now, because convenient for testing only.
-        //
-        queue.sessionDelegate = OAuth2DebugURLSessionDelegate(host: hostname)
+//        //
+//        // DANGER ... DEBUG URL Session Delegate allows man-in-the-middle attacks (using self-signed certs or bogus Certificate Authorities).
+//        // using for now, because convenient for testing only.
+//        //
+//        queue.sessionDelegate = OAuth2DebugURLSessionDelegate(host: hostname)
         
         queue.logger = OAuth2DebugLogger(OAuth2LogLevel.trace)
         queue.onBeforeDynamicClientRegistration = { url in
             let registration = OAuth2DynRegAppStore()
             registration.sandbox = true
-            registration.overrideAppReceipt("your apple-supplied app purchase receipt")
+            registration.overrideAppReceipt("NO-APP-RECEIPT")
             registration.extraHeaders = [
                 "Antispam" : "myantispam",
                 ] as OAuth2StringDict
