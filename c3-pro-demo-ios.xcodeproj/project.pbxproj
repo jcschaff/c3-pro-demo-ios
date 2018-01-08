@@ -14,6 +14,7 @@
 		14916D491FE98AA800302B27 /* text-and-values.json in Resources */ = {isa = PBXBuildFile; fileRef = 14916D451FE98AA800302B27 /* text-and-values.json */; };
 		14916D4A1FE98AA800302B27 /* dates.json in Resources */ = {isa = PBXBuildFile; fileRef = 14916D461FE98AA800302B27 /* dates.json */; };
 		14916D4C1FE992E300302B27 /* C3DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14916D4B1FE992E300302B27 /* C3DemoServer.swift */; };
+		14916D522002E9F200302B27 /* public.crt in Resources */ = {isa = PBXBuildFile; fileRef = 14916D502002E9F100302B27 /* public.crt */; };
 		EE19B9851C6D2BC400B6F40F /* C3DemoSystemServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19B9841C6D2BC400B6F40F /* C3DemoSystemServices.swift */; };
 		EE19B9881C6D2C6D00B6F40F /* C3DemoConsenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19B9871C6D2C6D00B6F40F /* C3DemoConsenting.swift */; };
 		EE19B98A1C6D2CAE00B6F40F /* C3DemoQuestionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19B9891C6D2CAE00B6F40F /* C3DemoQuestionnaire.swift */; };
@@ -264,6 +265,7 @@
 		14916D461FE98AA800302B27 /* dates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dates.json; sourceTree = "<group>"; };
 		14916D4B1FE992E300302B27 /* C3DemoServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C3DemoServer.swift; sourceTree = "<group>"; };
 		14916D4F1FEBF62F00302B27 /* c3-pro-demo-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "c3-pro-demo-ios.entitlements"; sourceTree = "<group>"; };
+		14916D502002E9F100302B27 /* public.crt */ = {isa = PBXFileReference; lastKnownFileType = file; name = public.crt; path = "c3-pro-demo-ios/public.crt"; sourceTree = "<group>"; };
 		EE19B9841C6D2BC400B6F40F /* C3DemoSystemServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C3DemoSystemServices.swift; sourceTree = "<group>"; };
 		EE19B9871C6D2C6D00B6F40F /* C3DemoConsenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C3DemoConsenting.swift; sourceTree = "<group>"; };
 		EE19B9891C6D2CAE00B6F40F /* C3DemoQuestionnaire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C3DemoQuestionnaire.swift; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 		EE7DD4191C10E44A00CBD0E6 = {
 			isa = PBXGroup;
 			children = (
+				14916D502002E9F100302B27 /* public.crt */,
 				14916D301FE981F900302B27 /* JWT.xcodeproj */,
 				EEEAD1011DAF820300A665CE /* CryptoSwift.xcodeproj */,
 				EEEAD0E51DAF81E900A665CE /* SQLite.xcodeproj */,
@@ -510,7 +513,7 @@
 		EE7DD41A1C10E44A00CBD0E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Boston Children's Hospital";
 				TargetAttributes = {
@@ -733,6 +736,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14916D481FE98AA800302B27 /* enableWhen.json in Resources */,
+				14916D522002E9F200302B27 /* public.crt in Resources */,
 				14916D4A1FE98AA800302B27 /* dates.json in Resources */,
 				EE7DD45B1C10E88400CBD0E6 /* Intro.css in Resources */,
 				EE7DD4701C1103D500CBD0E6 /* logo_disease_researchInstitute@2x.png in Resources */,
